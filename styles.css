@@ -3747,3 +3747,46 @@ body {
         right: 10px;
     }
 }
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .bg-image {
+        background-image: url('mobile trip bg main.png') !important;
+        background-size: cover;
+        background-position: center bottom;
+        transform: scale(1.0);
+        /* Zoom out effect */
+    }
+
+    .trip-stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        padding: 0 20px;
+        max-width: 320px;
+        margin: 0 auto 2rem;
+    }
+
+    .stat-card {
+        padding: 8px;
+        width: 100%;
+    }
+
+    .stat-icon {
+        font-size: 1.2rem;
+        margin-bottom: 2px;
+    }
+
+    .stat-value {
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+    }
+
+    .hero-content {
+        padding-top: 25vh;
+        /* Moved down significantly */
+    }
+}
